@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="contents">
+    <h2 align="center">Input Form Event</h2>
+    <div class="formContent">
+      <form id="formDataDiri" autocomplete="off">
+        <div class="form-element" id="fieldName">
+          <label for="inputNama">Nama Panggilan :</label>
+          <br/>
+          <input id="inputNama" type="text" name="nama" placeholder="Nama Panggilan Anda" maxlength="15">
+          <br/>
+          <label id="notifikasiSisaKarater">Sisa Karakter :<span id="sisaKarakter"></span></span></label>
+        </div>
+<br>
+        <div class="form-element" id="fieldCopy">
+          <label for="inputCopy"><i>Copy </i>tulisan ini :</label>
+          <br/>
+          <input id="inputCopy" type="text" name="copy" value="Hello World!" readonlyinput/>
+          <br/>
+        </div>
+<br>
+        <div class="form-element" id="fieldPaste">
+          <label for="inputPaste"><i>Paste </i>tulisan ini :</label>
+          <br/>
+          <input id="inputCopy" type="text" name="paste" placeholder="Paste Sesuatu Disini"/>
+          <br/>
+        </div>
+<br>
+        <div class="form-element" id="fieldCaptcha">
+          <label for="inputCaptcha">Tulis <i>Captcha </i>berikut.</label>
+          <br/>
+          <img src="https://i.ibb.co/yy59QPB/Captcha.png" alt="Captcha">
+          <br>
+          <input id="inputCaptcha" type="text" name="captcha" placeholder="Tulis Captcha Disini"/>
+          <br/>
+          <p>Tekan Enter pada keyboard jika sudah selesai menulis <i>captcha</i></p>
+        </div>
+
+        <div class="form-element" align="center">
+          <input id="submitButton" type="submit" value="Submit Data" disabled>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
